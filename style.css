@@ -1,5 +1,4 @@
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -10,7 +9,9 @@ body {
 
 .flex-container {
   display: flex;
-  border-style: dotted;
+  padding: 10px;
+  flex-direction: column;
+  /* border-style: dotted; */
 }
 
 a:hover {
@@ -49,7 +50,6 @@ nav {
   height: 50px;
   border-radius: 50%;
 }
-/* Need to fix the hover component its not showing in the right place */
 .nav-link-round:hover {
   background-color: #f0f0f0;
 }
@@ -61,7 +61,7 @@ button {
 .button-sign {
   background-color: #1a73e8;
   color: #fff;
-  padding: 8px 20px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -78,11 +78,121 @@ button {
   width: 24px;
   height: 24px;
   background-color: transparent;
-  background-image: url("https://api.iconify.design/mdi/dots-grid.svg?color=%235f6368&width=24&height=24");
+  background-image: url("https://api.iconify.design/mdi/dots-grid.svg?color=%5f6368&width=24&height=24");
   opacity: 0.6;
   padding-top: 10px;
 }
 
 span:hover {
   background-color: grey;
+}
+
+.logo {
+  display: flex;
+  align-self: center;
+  margin-top: 210px;
+}
+
+.search-interface {
+  display: flex;
+  width: auto;
+  max-width: 580px;
+}
+
+.search-icon {
+  display: flex;
+  align-self: flex-start;
+}
+
+.input {
+  display: flex;
+  align-self: center;
+  width: 60%;
+  height: 45px;
+  border-radius: 25px;
+  border: 0.5px grey solid;
+  margin-top: 15px;
+}
+
+input:hover {
+  outline: none;
+  border-color: #a3aeb8;
+  box-shadow: 0 0 5px #a3aeb8;
+}
+/* Need to fix the hover component its not showing in the right place */
+
+.input:focus {
+  outline: none;
+  border-color: #a3aeb8;
+  box-shadow: 0 0 5px #a3aeb8;
+}
+
+.banana-div {
+  display: flex;
+  justify-content: center;
+}
+
+.button-search {
+  background-color: #f8f9fa;
+  color: ##43474a;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  font-family: arial, sans-serif;
+  margin: 6px;
+}
+
+.button-search:hover {
+  outline: none;
+  border-color: #a3aeb8;
+  box-shadow: 0 0 2px #a3aeb8;
+}
+
+.flex-container-end {
+  display: flex;
+  flex-direction: column;
+  /* border-style: dotted; */
+}
+
+.end1 {
+  padding: 0.9375rem;
+  background-color: #f2f2f2;
+  color: #717171;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.end2 {
+  padding: 0.9375rem;
+  background-color: #f2f2f2;
+  color: #717171;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.test1 {
+  color: #717171;
+}
+.flex-grow {
+  display: flex;
+  height: 370px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  color: #717171;
+}
+
+hr {
+  color: #dadce0;
+  opacity: 0.25;
+}
+
+#bottom {
+  color: #717171;
 }
